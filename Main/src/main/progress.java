@@ -35,6 +35,7 @@ public class progress extends javax.swing.JFrame {
         loadingNote = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("WELCOME ");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
 
