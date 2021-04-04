@@ -55,7 +55,7 @@ public class DeleteFrame extends javax.swing.JFrame {
             }
         });
 
-        Delete.setText("Add Course");
+        Delete.setText("Delete Course");
         Delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DeleteActionPerformed(evt);
