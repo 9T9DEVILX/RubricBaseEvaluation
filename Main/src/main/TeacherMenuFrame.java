@@ -34,8 +34,8 @@ public class TeacherMenuFrame extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenu5 = new javax.swing.JMenu();
         Studentmangement = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
@@ -91,10 +91,6 @@ public class TeacherMenuFrame extends javax.swing.JFrame {
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/icons8_project_management_16.png"))); // NOI18N
         jMenu1.setText("File");
 
-        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/icons8_project_management_16.png"))); // NOI18N
-        jMenu5.setText("Assesment Management");
-        jMenu1.add(jMenu5);
-
         Studentmangement.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/icons8_project_management_16.png"))); // NOI18N
         Studentmangement.setText("Student Management");
         Studentmangement.addActionListener(new java.awt.event.ActionListener() {
@@ -104,6 +100,9 @@ public class TeacherMenuFrame extends javax.swing.JFrame {
         });
         jMenu1.add(Studentmangement);
 
+        jMenuItem2.setText("Assesment Managements");
+        jMenu1.add(jMenuItem2);
+
         jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/icons8_back_to_16.png"))); // NOI18N
         jMenuItem1.setText("Log out");
         jMenu1.add(jMenuItem1);
@@ -111,9 +110,9 @@ public class TeacherMenuFrame extends javax.swing.JFrame {
         jMenuBar1.add(jMenu1);
 
         jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/main/icons8_edit_16.png"))); // NOI18N
-        jMenu2.setText("Edit");
+        jMenu2.setText("Result");
 
-        jMenuItem4.setText("Edit Student");
+        jMenuItem4.setText("Course Result");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem4ActionPerformed(evt);
@@ -196,9 +195,9 @@ this.setVisible(false);
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
