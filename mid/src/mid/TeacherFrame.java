@@ -39,9 +39,11 @@ public class TeacherFrame extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         CLOresultPane = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel15 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jTabbedPane1 = new javax.swing.JTabbedPane();
+        TeacherMenuTab = new javax.swing.JTabbedPane();
         viewStuTab = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
@@ -68,8 +70,33 @@ public class TeacherFrame extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         MarkAssignmentTab = new javax.swing.JPanel();
+        jSeparator8 = new javax.swing.JSeparator();
+        jSeparator9 = new javax.swing.JSeparator();
+        jTextField9 = new javax.swing.JTextField();
+        jSeparator10 = new javax.swing.JSeparator();
+        jTextField10 = new javax.swing.JTextField();
+        jSeparator11 = new javax.swing.JSeparator();
+        jTextField11 = new javax.swing.JTextField();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel9 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable3 = new javax.swing.JTable();
+        jTextField12 = new javax.swing.JTextField();
+        jSeparator12 = new javax.swing.JSeparator();
+        jLabel10 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
         AssignmentResultTab = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jTable8 = new javax.swing.JTable();
+        jTextField8 = new javax.swing.JTextField();
+        jSeparator13 = new javax.swing.JSeparator();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTable5 = new javax.swing.JTable();
         CLOResultTab = new javax.swing.JPanel();
+        jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -80,6 +107,11 @@ public class TeacherFrame extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         ViewStuPane.setBackground(new java.awt.Color(0, 0, 0));
+        ViewStuPane.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ViewStuPaneMouseClicked(evt);
+            }
+        });
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
@@ -107,6 +139,11 @@ public class TeacherFrame extends javax.swing.JFrame {
 
         AssignmentPane.setBackground(new java.awt.Color(0, 0, 0));
         AssignmentPane.setForeground(new java.awt.Color(255, 255, 255));
+        AssignmentPane.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AssignmentPaneMouseClicked(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -133,6 +170,11 @@ public class TeacherFrame extends javax.swing.JFrame {
 
         markAssignmentPane.setBackground(new java.awt.Color(0, 0, 0));
         markAssignmentPane.setForeground(new java.awt.Color(255, 255, 255));
+        markAssignmentPane.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                markAssignmentPaneMouseClicked(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -159,6 +201,11 @@ public class TeacherFrame extends javax.swing.JFrame {
 
         AssignmentReslPane.setBackground(new java.awt.Color(0, 0, 0));
         AssignmentReslPane.setForeground(new java.awt.Color(255, 255, 255));
+        AssignmentReslPane.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AssignmentReslPaneMouseClicked(evt);
+            }
+        });
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -185,6 +232,11 @@ public class TeacherFrame extends javax.swing.JFrame {
 
         CLOresultPane.setBackground(new java.awt.Color(0, 0, 0));
         CLOresultPane.setForeground(new java.awt.Color(255, 255, 255));
+        CLOresultPane.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CLOresultPaneMouseClicked(evt);
+            }
+        });
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
@@ -208,6 +260,26 @@ public class TeacherFrame extends javax.swing.JFrame {
         );
 
         jPanel2.add(CLOresultPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 330, 140, 40));
+
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel4MouseClicked(evt);
+            }
+        });
+        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel15.setText("LOG OUT");
+        jLabel15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel15MouseClicked(evt);
+            }
+        });
+        jPanel4.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 60, 20));
+
+        jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, 101, 42));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 470));
 
@@ -289,7 +361,7 @@ public class TeacherFrame extends javax.swing.JFrame {
                 .addContainerGap(89, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("tab1", viewStuTab);
+        TeacherMenuTab.addTab("tab1", viewStuTab);
 
         AssignmentTab.setBackground(java.awt.Color.white);
 
@@ -414,54 +486,173 @@ public class TeacherFrame extends javax.swing.JFrame {
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("tab2", AssignmentTab);
+        TeacherMenuTab.addTab("tab2", AssignmentTab);
 
         MarkAssignmentTab.setBackground(java.awt.Color.white);
+        MarkAssignmentTab.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        MarkAssignmentTab.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 257, 168, 10));
+        MarkAssignmentTab.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 219, 168, 10));
 
-        javax.swing.GroupLayout MarkAssignmentTabLayout = new javax.swing.GroupLayout(MarkAssignmentTab);
-        MarkAssignmentTab.setLayout(MarkAssignmentTabLayout);
-        MarkAssignmentTabLayout.setHorizontalGroup(
-            MarkAssignmentTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 575, Short.MAX_VALUE)
-        );
-        MarkAssignmentTabLayout.setVerticalGroup(
-            MarkAssignmentTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 422, Short.MAX_VALUE)
-        );
+        jTextField9.setText("Total Marks");
+        jTextField9.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        MarkAssignmentTab.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 197, 168, -1));
+        MarkAssignmentTab.add(jSeparator10, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 181, 168, 10));
 
-        jTabbedPane1.addTab("tab3", MarkAssignmentTab);
+        jTextField10.setText("Question");
+        jTextField10.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        MarkAssignmentTab.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 159, 168, -1));
+        MarkAssignmentTab.add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 143, 168, 10));
+
+        jTextField11.setText("Assignment Title");
+        jTextField11.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        MarkAssignmentTab.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 121, 168, -1));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Excellent", "Good", "Average", "Poor" }));
+        MarkAssignmentTab.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 235, 168, -1));
+
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel9.setText("Mark Assignment");
+        MarkAssignmentTab.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 30, -1, -1));
+
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String [] {
+                "Course ID", "Assingment", "Question", "CLO", "Rubric", "T.Marks"
+            }
+        ));
+        jScrollPane3.setViewportView(jTable3);
+
+        MarkAssignmentTab.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 143, 324, 192));
+
+        jTextField12.setText("Assignment ID");
+        jTextField12.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        MarkAssignmentTab.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 90, 143, -1));
+        MarkAssignmentTab.add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, 143, 10));
+
+        jLabel10.setForeground(new java.awt.Color(204, 0, 0));
+        jLabel10.setText("*Enter assignment ID to see details in Table");
+        MarkAssignmentTab.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(229, 122, -1, -1));
+
+        jButton4.setBackground(new java.awt.Color(0, 0, 0));
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
+        jButton4.setText("Add");
+        MarkAssignmentTab.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 60, -1));
+
+        jButton5.setBackground(new java.awt.Color(0, 0, 0));
+        jButton5.setForeground(new java.awt.Color(255, 255, 255));
+        jButton5.setText("Edit");
+        MarkAssignmentTab.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 60, -1));
+
+        jButton6.setBackground(new java.awt.Color(0, 0, 0));
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setText("Delete");
+        MarkAssignmentTab.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, -1, -1));
+
+        TeacherMenuTab.addTab("tab3", MarkAssignmentTab);
 
         AssignmentResultTab.setBackground(java.awt.Color.white);
+
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel11.setText("Assignment Result");
+
+        jTable8.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String [] {
+                "Q.No", "T.Marks", "O.Marks", "Rubrics", "Level Obtain", "%age"
+            }
+        ));
+        jScrollPane8.setViewportView(jTable8);
+
+        jTextField8.setText("Course ID");
+        jTextField8.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+
+        jTable5.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Sr No", "Assignment Name", "Total marks ", "Total Questions"
+            }
+        ));
+        jScrollPane5.setViewportView(jTable5);
 
         javax.swing.GroupLayout AssignmentResultTabLayout = new javax.swing.GroupLayout(AssignmentResultTab);
         AssignmentResultTab.setLayout(AssignmentResultTabLayout);
         AssignmentResultTabLayout.setHorizontalGroup(
             AssignmentResultTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 575, Short.MAX_VALUE)
+            .addGroup(AssignmentResultTabLayout.createSequentialGroup()
+                .addGroup(AssignmentResultTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(AssignmentResultTabLayout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(jLabel11))
+                    .addGroup(AssignmentResultTabLayout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addGroup(AssignmentResultTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField8)
+                            .addComponent(jSeparator13)
+                            .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 522, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(21, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AssignmentResultTabLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(54, 54, 54))
         );
         AssignmentResultTabLayout.setVerticalGroup(
             AssignmentResultTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 422, Short.MAX_VALUE)
+            .addGroup(AssignmentResultTabLayout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(jLabel11)
+                .addGap(18, 18, 18)
+                .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator13, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(27, 27, 27)
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(56, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("tab4", AssignmentResultTab);
+        TeacherMenuTab.addTab("tab4", AssignmentResultTab);
 
         CLOResultTab.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
+        jLabel12.setText("CLO result ");
 
         javax.swing.GroupLayout CLOResultTabLayout = new javax.swing.GroupLayout(CLOResultTab);
         CLOResultTab.setLayout(CLOResultTabLayout);
         CLOResultTabLayout.setHorizontalGroup(
             CLOResultTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 575, Short.MAX_VALUE)
+            .addGroup(CLOResultTabLayout.createSequentialGroup()
+                .addGap(53, 53, 53)
+                .addComponent(jLabel12)
+                .addContainerGap(437, Short.MAX_VALUE))
         );
         CLOResultTabLayout.setVerticalGroup(
             CLOResultTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 422, Short.MAX_VALUE)
+            .addGroup(CLOResultTabLayout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addComponent(jLabel12)
+                .addContainerGap(366, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("tab5", CLOResultTab);
+        TeacherMenuTab.addTab("tab5", CLOResultTab);
 
-        jPanel1.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 580, 450));
+        jPanel1.add(TeacherMenuTab, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 20, 580, 450));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -477,6 +668,38 @@ public class TeacherFrame extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void ViewStuPaneMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ViewStuPaneMouseClicked
+TeacherMenuTab.setSelectedIndex(0);        // TODO add your handling code here:
+    }//GEN-LAST:event_ViewStuPaneMouseClicked
+
+    private void AssignmentPaneMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AssignmentPaneMouseClicked
+TeacherMenuTab.setSelectedIndex(1);        // TODO add your handling code here:
+    }//GEN-LAST:event_AssignmentPaneMouseClicked
+
+    private void markAssignmentPaneMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_markAssignmentPaneMouseClicked
+      TeacherMenuTab.setSelectedIndex(2);  // TODO add your handling code here:
+    }//GEN-LAST:event_markAssignmentPaneMouseClicked
+
+    private void AssignmentReslPaneMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AssignmentReslPaneMouseClicked
+TeacherMenuTab.setSelectedIndex(3);        // TODO add your handling code here:
+    }//GEN-LAST:event_AssignmentReslPaneMouseClicked
+
+    private void CLOresultPaneMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CLOresultPaneMouseClicked
+TeacherMenuTab.setSelectedIndex(4);        // TODO add your handling code here:
+    }//GEN-LAST:event_CLOresultPaneMouseClicked
+
+    private void jLabel15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel15MouseClicked
+        LoginFrame lo = new LoginFrame();
+        lo.setVisible(true);
+        this.setVisible(false);        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel15MouseClicked
+
+    private void jPanel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseClicked
+        LoginFrame l = new LoginFrame();
+        l.setVisible(true);
+        this.setVisible(false);// TODO add your handling code here:
+    }//GEN-LAST:event_jPanel4MouseClicked
 
     /**
      * @param args the command line arguments
@@ -521,11 +744,20 @@ public class TeacherFrame extends javax.swing.JFrame {
     private javax.swing.JPanel CLOResultTab;
     private javax.swing.JPanel CLOresultPane;
     private javax.swing.JPanel MarkAssignmentTab;
+    private javax.swing.JTabbedPane TeacherMenuTab;
     private javax.swing.JPanel ViewStuPane;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -533,28 +765,46 @@ public class TeacherFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator10;
+    private javax.swing.JSeparator jSeparator11;
+    private javax.swing.JSeparator jSeparator12;
+    private javax.swing.JSeparator jSeparator13;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
-    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JSeparator jSeparator8;
+    private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable3;
+    private javax.swing.JTable jTable5;
+    private javax.swing.JTable jTable8;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
     private javax.swing.JPanel markAssignmentPane;
     private javax.swing.JPanel viewStuTab;
     // End of variables declaration//GEN-END:variables
